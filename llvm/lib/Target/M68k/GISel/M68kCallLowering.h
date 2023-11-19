@@ -63,8 +63,8 @@ private:
                            ISD::ArgFlagsTy Flags) override;
 };
 
-struct FormalArgHandler : public M68kIncomingValueHandler {
-  FormalArgHandler(MachineIRBuilder &MIRBuilder, MachineRegisterInfo &MRI)
+struct M68kFormalArgHandler : public M68kIncomingValueHandler {
+  M68kFormalArgHandler(MachineIRBuilder &MIRBuilder, MachineRegisterInfo &MRI)
       : M68kIncomingValueHandler(MIRBuilder, MRI) {}
 };
 
